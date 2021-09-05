@@ -1,0 +1,10 @@
+# application.yml
+spring:
+  profiles:
+    active: sharding
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.wudi.shardingjdbc.entity
+  # ¿ªÆômybatis sql´òÓ¡
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
